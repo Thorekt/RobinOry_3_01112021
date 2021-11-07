@@ -1,0 +1,19 @@
+{
+  "name": "robinory_3_01112021",
+  "version": "1.0.0",
+  "description": "Projet OpenClassroom ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thorekt/RobinOry_3_01112021.git"
+  },
+  "author": "Thorekt-Robin_Ory",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thorekt/RobinOry_3_01112021/issues"
+  },
+  "homepage": "https://github.com/Thorekt/RobinOry_3_01112021#readme"
+}

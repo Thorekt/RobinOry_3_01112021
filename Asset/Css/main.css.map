@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../Sass/main.scss",
+        "../Sass/Utils/_variables.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
