@@ -1,0 +1,42 @@
+.location,
+.location input {
+  background-color: map-get($color, search);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  padding-top: 1.3em;
+  padding-bottom: 1em;
+  & i {
+    margin-right: 1em;
+  }
+  & input {
+    border: 0;
+    &::placeholder {
+      font-size: map-get($font-size, text);
+      color: black;
+    }
+  }
+}
+
+$h2Margin: 1.7em;
+$spanMargin: 1.2em;
+.discover {
+  text-align: center;
+
+  & h2 {
+    margin-right: $h2Margin;
+    margin-left: $h2Margin;
+  }
+
+  & span {
+    margin-right: $spanMargin;
+    margin-left: $spanMargin;
+  }
+
+  & button {
+    & span {
+    }
+  }
+}

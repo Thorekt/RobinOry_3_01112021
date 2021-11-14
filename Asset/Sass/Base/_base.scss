@@ -1,0 +1,21 @@
+@font-face {
+  font-family: map-get($font, title);
+  src: url("../Fonts/" + map-get($font, title) + ".ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: map-get($font, text);
+  src: url("../Fonts/" + map-get($font, text) + ".ttf");
+  font-style: normal;
+}
+
+body {
+  font-family: map-get($font, text);
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  object-fit: cover;
+}

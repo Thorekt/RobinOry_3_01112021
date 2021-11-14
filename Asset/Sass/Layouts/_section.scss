@@ -1,0 +1,9 @@
+section {
+  padding-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  & h2{
+    margin-top: 2em;
+    font-size: map-get($font-size, title);
+  }
+}
