@@ -6,12 +6,11 @@
 .location {
   display: flex;
   justify-content: center;
-  padding-top: 1.3em;
-  padding-bottom: 1em;
-  & i {
+  @include padding-top-bottom(1.3em, -0.3em);
+  i {
     margin-right: 1em;
   }
-  & input {
+  input {
     border: 0;
     &::placeholder {
       font-size: map-get($font-size, text);
@@ -25,18 +24,13 @@ $spanMargin: 1.2em;
 .discover {
   text-align: center;
 
-  & h2 {
-    margin-right: $h2Margin;
-    margin-left: $h2Margin;
+  h2 {
+    @include margin-left-right($h2Margin);
   }
 
-  & span {
-    margin-right: $spanMargin;
-    margin-left: $spanMargin;
-  }
-
-  & button {
-    & span {
-    }
+  span {
+    @include margin-left-right($spanMargin);
+    font-size: map-get($font-size, tallText);
+    margin-bottom: 1.5em;
   }
 }

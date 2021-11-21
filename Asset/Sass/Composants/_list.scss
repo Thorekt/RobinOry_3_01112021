@@ -1,0 +1,38 @@
+ul{
+    list-style-type: none;
+    padding: 0;
+
+    li{
+        @include padding-top-bottom(2em);
+        margin-left: 0.8em;
+        margin-bottom: 1.5em;
+        border-radius: 25px;
+
+        &.highlighted{
+            background-color:transparentize(map-get($color, primary), 0.90);
+            i{
+                color: map-get($color, primary);
+            }
+        }
+
+        .number{
+            margin-left: -0.9em;
+            background-color: map-get($color, primary);
+            color: white;
+            border-radius: 100px;
+            padding-top: 0.3em;
+            padding-bottom: 0.1em;
+            @include padding-left-right(0.5em);
+        }
+
+        i{
+            @include margin-left-right(1.2em);
+            color: gray;
+            font-size: map-get($font-size , bigText);
+        }
+
+        .text{            
+            font-size: map-get($font-size , text);
+        }
+    }
+}

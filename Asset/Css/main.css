@@ -11,26 +11,96 @@
 body {
   font-family: "Roboto-Medium";
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  font-size: 1rem;
+  background-color: #fffefe; }
 
 img {
   -o-object-fit: cover;
-     object-fit: cover; }
+     object-fit: cover;
+  max-width: 100%; }
+
+.grey {
+  background-color: #f6f6f6; }
+
+.btn {
+  color: white;
+  border: 0;
+  background-image: linear-gradient(170deg, #ff79da, #9356dc);
+  padding-top: 1.4em;
+  padding-bottom: 1.4em;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px; }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
+  ul li {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    margin-left: 0.8em;
+    margin-bottom: 1.5em;
+    border-radius: 25px; }
+    ul li.highlighted {
+      background-color: rgba(147, 86, 220, 0.1); }
+      ul li.highlighted i {
+        color: #9356dc; }
+    ul li .number {
+      margin-left: -0.9em;
+      background-color: #9356dc;
+      color: white;
+      border-radius: 100px;
+      padding-top: 0.3em;
+      padding-bottom: 0.1em;
+      padding-left: 0.5em;
+      padding-right: 0.5em; }
+    ul li i {
+      margin-left: 1.2em;
+      margin-right: 1.2em;
+      color: gray;
+      font-size: 1.4rem; }
+    ul li .text {
+      font-size: 1rem; }
+
+footer {
+  background-color: #353535;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2em;
+  padding-right: 2em; }
+  footer h4 {
+    font-family: "Shrikhand-Regular";
+    font-size: 1.2rem;
+    letter-spacing: 1px; }
+  footer a {
+    margin-bottom: 1em; }
+    footer a i {
+      margin-right: 1em; }
 
 header {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
   header .logo {
-    margin-right: auto;
-    margin-left: auto; }
+    margin-left: auto;
+    margin-right: auto; }
     header .logo img {
       width: 13em; }
 
 section {
-  padding-bottom: 2em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -39,8 +109,52 @@ section {
       -ms-flex-direction: column;
           flex-direction: column; }
   section h2 {
-    margin-top: 2em;
-    font-size: 1.8rem; }
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-size: 1.6rem; }
+
+.cards-container {
+  margin-top: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  .cards-container .card {
+    background-color: #fffefe;
+    margin-bottom: 1em;
+    border-radius: 20px; }
+    .cards-container .card .new {
+      position: absolute;
+      margin-top: 1em;
+      margin-left: -7em;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 1em;
+      padding-right: 1em;
+      border-radius: 2px;
+      font-size: 0.9rem;
+      background-color: #99e2d0;
+      color: #278870; }
+    .cards-container .card img {
+      border-radius: 20px 20px 0px 0px;
+      height: 12em;
+      width: 100%; }
+    .cards-container .card div {
+      margin-bottom: 1em;
+      padding-left: 1em; }
+      .cards-container .card div h3 {
+        margin-top: 0.5em;
+        margin-bottom: 0.4em; }
+      .cards-container .card div span {
+        font-size: 1rem; }
+      .cards-container .card div i {
+        position: absolute;
+        font-size: 1.8rem;
+        margin-left: 11em;
+        margin-top: 0.3em; }
 
 .location,
 .location input {
@@ -75,9 +189,11 @@ section {
 .discover {
   text-align: center; }
   .discover h2 {
-    margin-right: 1.7em;
-    margin-left: 1.7em; }
+    margin-left: 1.7em;
+    margin-right: 1.7em; }
   .discover span {
+    margin-left: 1.2em;
     margin-right: 1.2em;
-    margin-left: 1.2em; }
+    font-size: 1.2rem;
+    margin-bottom: 1.5em; }
 /*# sourceMappingURL=main.css.map */

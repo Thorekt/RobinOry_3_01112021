@@ -1,0 +1,37 @@
+@mixin margin-top-bottom($size, $dif: 0) {
+  margin-top: $size;
+  @if $dif!= 0 {
+    margin-bottom: $size + $dif;
+  } @else {
+    margin-bottom: $size;
+  }
+}
+
+@mixin margin-left-right($size, $dif: 0) {
+  margin-left: $size;
+  @if $dif!= 0 {
+    margin-right: $size + $dif;
+  } @else {
+    margin-right: $size;
+  }
+}
+
+@mixin padding-top-bottom($size, $dif: 0) {
+  padding-top: $size;
+
+  @if $dif!= 0 {
+    padding-bottom: $size + $dif;
+  } @else {
+    padding-bottom: $size;
+  }
+}
+
+@mixin padding-left-right($size, $dif: 0) {
+  padding-left: $size;
+
+  @if $dif!= 0 {
+    padding-right: $size + $dif;
+  } @else {
+    padding-right: $size;
+  }
+}

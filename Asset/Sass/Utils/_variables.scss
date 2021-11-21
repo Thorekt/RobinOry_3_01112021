@@ -5,6 +5,7 @@ $color: (
   search: #eaeaea,
   back1: #fffefe,
   back2: #f6f6f6,
+  footer: #353535,
 );
 
 $font: (
@@ -13,7 +14,13 @@ $font: (
 );
 
 $font-size: (
-  title: 1.8rem,
+  title: 1.6rem,
   bigText: 1.4rem,
+  tallText: 1.2rem,
   text: 1rem,
+);
+
+$margin-size: (
+  small: 1em,
+  medium: 2em,
 );

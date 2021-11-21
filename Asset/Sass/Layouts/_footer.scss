@@ -1,0 +1,19 @@
+footer {
+  background-color: map-get($color, footer);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: map-get($margin-size, medium);
+  padding-right: map-get($margin-size, medium);
+  h4 {
+    font-family: map-get($font, title);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  a {
+    margin-bottom: 1em;
+    i {
+      margin-right: 1em;
+    }
+  }
+}

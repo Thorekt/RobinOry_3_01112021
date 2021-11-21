@@ -1,9 +1,10 @@
 section {
-  padding-bottom: 2em;
+  @include padding-top-bottom (3em);
+  @include padding-left-right (1em);
   display: flex;
   flex-direction: column;
-  & h2{
-    margin-top: 2em;
+  h2 {
+    @include margin-top-bottom (0, 0.5em);
     font-size: map-get($font-size, title);
   }
 }

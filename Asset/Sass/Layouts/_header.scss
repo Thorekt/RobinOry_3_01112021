@@ -1,11 +1,9 @@
 header {
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  @include margin-top-bottom(1em,-0.5em);
   display: flex;
   & .logo {
-    margin-right: auto;
-    margin-left: auto;
-    & img {
+    @include margin-left-right(auto);
+    img {
       width: 13em;
     }
   }

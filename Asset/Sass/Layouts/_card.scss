@@ -1,0 +1,42 @@
+.cards-container {
+    margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  .card {
+    background-color: map-get($color, back1);
+    margin-bottom: 1em;
+    border-radius: 20px;
+    .new {
+      position: absolute;
+      margin-top: 1em;
+      margin-left: -7em;
+      @include padding-top-bottom(0.5em);
+      @include padding-left-right(1em);
+      border-radius: 2px;
+      font-size: 0.9rem;
+      background-color: map-get($color, tertiary);
+      color: darken(map-get($color, tertiary), 40);
+    }
+    img {
+      border-radius: 20px 20px 0px 0px;
+      height: 12em;
+      width: 100%;
+    }
+    div {
+      margin-bottom: 1em;
+      padding-left: 1em;
+      h3 {
+        @include margin-top-bottom(0.5em, -0.1em);
+      }
+      span {
+          font-size: map-get($font-size, text);
+      }
+      i {
+        position: absolute;
+        font-size: 1.8rem;
+        margin-left: 11em;
+        margin-top: 0.3em;
+      }
+    }
+  }
+}
