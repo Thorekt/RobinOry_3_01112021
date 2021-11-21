@@ -1,10 +1,21 @@
-.menu{
-    border-radius: 20px 20px 0px 0px;
+.menu {
+  border-radius: 50px 50px 0px 0px;
+  padding-top: 3em;
+  h2 {
+    font-size: map-get($font-size, bigTitle);
+    font-family: map-get($font, title);
+  }
+  i {
+    position: absolute;
+    font-size: 1.9rem;
+    margin-top: 0.3em;
+    right: -0.5em;
+    margin-right: 2em;
+  }
 }
 
-.menu-img{
-    position: relative;
-    margin-bottom: -3.5em;
-    z-index: -1;
+.menu-img {
+  position: relative;
+  margin-bottom: -3.5em;
+  z-index: -1;
 }
-

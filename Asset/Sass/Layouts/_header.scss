@@ -1,6 +1,17 @@
 header {
   @include margin-top-bottom(1em,-0.5em);
   display: flex;
+
+  button{
+    position: absolute;
+    border: 0;
+    font-size: 1.3em;
+    margin-top: 0.25em;
+    margin-left: 1em;
+    background-color: map-get($color, back1);
+    color: black;
+  }
+  
   & .logo {
     @include margin-left-right(auto);
     img {
