@@ -1,5 +1,5 @@
 .cards-container {
-    margin-top: 1em;
+  margin-top: 1em;
   display: flex;
   flex-direction: column;
   .card {
@@ -25,11 +25,14 @@
     div {
       margin-bottom: 1em;
       padding-left: 1em;
-      h3 {
+      h3,
+      h4 {
         @include margin-top-bottom(0.5em, -0.1em);
       }
       span {
-          font-size: map-get($font-size, text);
+        font-size: map-get($font-size, text);
+      }
+      .price {     
       }
       i {
         position: absolute;

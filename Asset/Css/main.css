@@ -145,7 +145,8 @@ section {
     .cards-container .card div {
       margin-bottom: 1em;
       padding-left: 1em; }
-      .cards-container .card div h3 {
+      .cards-container .card div h3,
+      .cards-container .card div h4 {
         margin-top: 0.5em;
         margin-bottom: 0.4em; }
       .cards-container .card div span {
@@ -196,4 +197,12 @@ section {
     margin-right: 1.2em;
     font-size: 1.2rem;
     margin-bottom: 1.5em; }
+
+.menu {
+  border-radius: 20px 20px 0px 0px; }
+
+.menu-img {
+  position: relative;
+  margin-bottom: -3.5em;
+  z-index: -1; }
 /*# sourceMappingURL=main.css.map */
