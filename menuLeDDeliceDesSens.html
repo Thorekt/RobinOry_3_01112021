@@ -13,81 +13,106 @@
     <title>ohmyfood - Le d&eacute;lice des sens</title>
   </head>
   <body>
-    <header>
-      <div>
-        <button></button>
-        <img src="./Asset/Images/Logo/ohmyfood.png" alt="Logo Ohmyfood" />
-      </div>
-    </header>
+    <div class="pg-header">
+      <header>
+        <button><i class="fas fa-arrow-left"></i></button>
+        <div class="logo">
+          <img src="./Asset/Images/Logo/ohmyfood.png" alt="Logo Ohmyfood" />
+        </div>
+      </header>
+    </div>
 
-    <section>
-      <h2>Le d&eacute;lice des sens</h2>
-      <i></i>
+    <div class="pg-main">
+      <img
+        class="menu-img"
+        src="./Asset/Images/Restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+        alt=""
+      />
 
-      <div>
-        <h3>Entr&eacute;es</h3>
-        <div>
-          <h4>Tartare de thon</h4>
-          <span>Assaisonn&eacute; au yuzu</span>
-          <span>25&euro;</span>
-        </div>
-        <div>
-          <h4>Bouch&eacute;e de homard croustillant</h4>
-          <span>Et sa farandole de petits l&eacute;gumes</span>
-          <span>35&euro;</span>
-        </div>
-        <div>
-          <h4>Velout&eacute; de c&egrave;pes</h4>
-          <span>Aux truffes</span>
-          <span>20&euro;</span>
-        </div>
-      </div>
+      <section class="menu grey">
+        <h2>Le d&eacute;lice des sens</h2>
+        <i class="far fa-heart"></i>
+        <ul>
+          <li>
+            <ul>
+              <h3>Entr&eacute;es</h3>
+              <li>
+                <h4>Tartare de thon</h4>
+                <span>Assaisonn&eacute; au yuzu</span>
+                <span class="price">25&euro;</span>
+              </li>
+              <li>
+                <h4>Bouch&eacute;e de homard croustillant</h4>
+                <span>Et sa farandole de petits l&eacute;gumes</span>
+                <span class="price">35&euro;</span>
+              </li>
+              <li>
+                <h4>Velout&eacute; de c&egrave;pes</h4>
+                <span>Aux truffes</span>
+                <span class="price">20&euro;</span>
+              </li>
+            </ul>
+          </li>
 
-      <div>
-        <h3>Plats</h3>
-        <div>
-          <h4>Poulet r&ocirc;ti aux herbes de Provence</h4>
-          <span>Et sa cr&egrave;me de truffe</span>
-          <span>40&euro;</span>
-        </div>
-        <div>
-          <h4>Langouste r&ocirc;tie</h4>
-          <span>Et ses l&eacute;gumes de saison</span>
-          <span>35&euro;</span>
-        </div>
-        <div>
-          <h4>C&ocirc;te de boeuf Angus</h4>
-          <span>Et sa pur&eacute;e de panais</span>
-          <span>44&euro;</span>
-        </div>
-      </div>
+          <li>
+            <ul>
+              <h3>Plats</h3>
+              <li>
+                <h4>Poulet r&ocirc;ti aux herbes de Provence</h4>
+                <span>Et sa cr&egrave;me de truffe</span>
+                <span class="price">40&euro;</span>
+              </li>
+              <li>
+                <h4>Langouste r&ocirc;tie</h4>
+                <span>Et ses l&eacute;gumes de saison</span>
+                <span class="price">35&euro;</span>
+              </li>
+              <li>
+                <h4>C&ocirc;te de boeuf Angus</h4>
+                <span>Et sa pur&eacute;e de panais</span>
+                <span class="price">44&euro;</span>
+              </li>
+            </ul>
+          </li>
 
-      <div>
-        <h3>Desserts</h3>
-        <div>
-          <h4>Farandole de desserts</h4>
-          <span>Du chef</span>
-          <span>18&euro;</span>
-        </div>
-        <div>
-          <h4>Cr&egrave;me brul&eacute;e</h4>
-          <span>Revisit&eacute;e</span>
-          <span>22&euro;</span>
-        </div>
-        <div>
-          <h4>Tiramisu</h4>
-          <span>&Agrave;la noisette</span>
-          <span>23&euro;</span>
-        </div>
-      </div>
-    </section>
+          <li>
+            <ul>
+              <h3>Desserts</h3>
+              <li>
+                <h4>Farandole de desserts</h4>
+                <span>Du chef</span>
+                <span class="price">18&euro;</span>
+              </li>
+              <li>
+                <h4>Cr&egrave;me brul&eacute;e</h4>
+                <span>Revisit&eacute;e</span>
+                <span class="price">22&euro;</span>
+              </li>
+              <li>
+                <h4>Tiramisu</h4>
+                <span>&Agrave;la noisette</span>
+                <span class="price">23&euro;</span>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
 
-    <footer>
-      <a><h4>ohmyfood</h4></a>
-      <a><i class="fas fa-utensils"></i><span class="has-icon">Proposer un restaurant</span></a>
-      <a><i class="fas fa-hands-helping"></i><span class="has-icon">Devenir partenaire</span></a>
-      <a><span>Mentions légales</span></a>
-      <a><span>Contact</span></a>
-    </footer>
+    <div class="pg-footer">
+      <footer>
+        <a><h4>ohmyfood</h4></a>
+        <a
+          ><i class="fas fa-utensils"></i
+          ><span class="has-icon">Proposer un restaurant</span></a
+        >
+        <a
+          ><i class="fas fa-hands-helping"></i
+          ><span class="has-icon">Devenir partenaire</span></a
+        >
+        <a><span>Mentions légales</span></a>
+        <a><span>Contact</span></a>
+      </footer>
+    </div>
   </body>
 </html>

@@ -1,5 +1,8 @@
-footer {
+.pg-footer{
   background-color: map-get($color, footer);
+}
+
+footer {
   color: white;
   display: flex;
   flex-direction: column;

@@ -23,6 +23,16 @@ img {
 .grey {
   background-color: #f6f6f6; }
 
+.pg-header, .pg-main, .pg-footer {
+  width: 100%; }
+
+.wrapper {
+  width: 100%; }
+
+header, footer, section {
+  max-width: 600px;
+  margin: auto; }
+
 .btn {
   color: white;
   border: 0;
@@ -63,8 +73,10 @@ ul {
     ul li .text {
       font-size: 1rem; }
 
+.pg-footer {
+  background-color: #353535; }
+
 footer {
-  background-color: #353535;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -135,11 +147,12 @@ section {
   .cards-container .card {
     background-color: #fffefe;
     margin-bottom: 1em;
-    border-radius: 20px; }
+    border-radius: 20px;
+    position: relative; }
     .cards-container .card .new {
       position: absolute;
-      margin-top: 1em;
-      margin-left: -7em;
+      top: 1em;
+      right: 1em;
       padding-top: 0.5em;
       padding-bottom: 0.5em;
       padding-left: 1em;
@@ -155,20 +168,15 @@ section {
     .cards-container .card div {
       margin-bottom: 1em;
       padding-left: 1em; }
-      .cards-container .card div h3,
-      .cards-container .card div h4 {
-        margin-top: 0.5em;
-        margin-bottom: 0.4em; }
-      .cards-container .card div span {
-        font-size: 1rem; }
-      .cards-container .card div .price {
-        position: absolute;
-        right: 3em; }
-      .cards-container .card div i {
-        position: absolute;
-        font-size: 1.8rem;
-        margin-left: 11em;
-        margin-top: 0.3em; }
+    .cards-container .card h3 {
+      margin-top: 0.5em;
+      margin-bottom: 0.4em; }
+    .cards-container .card span {
+      font-size: 1rem; }
+    .cards-container .card i {
+      position: absolute;
+      font-size: 1.8rem;
+      right: 1em; }
 
 .location,
 .location input {
@@ -211,9 +219,17 @@ section {
     font-size: 1.2rem;
     margin-bottom: 1.5em; }
 
+.menu-img {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: -3.5em;
+  z-index: -1; }
+
 .menu {
   border-radius: 50px 50px 0px 0px;
-  padding-top: 3em; }
+  padding-top: 3em;
+  position: relative; }
   .menu h2 {
     font-size: 2rem;
     font-family: "Shrikhand-Regular"; }
@@ -223,9 +239,40 @@ section {
     margin-top: 0.3em;
     right: -0.5em;
     margin-right: 2em; }
-
-.menu-img {
-  position: relative;
-  margin-bottom: -3.5em;
-  z-index: -1; }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .menu ul li {
+      margin-left: 0em; }
+      .menu ul li ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+        .menu ul li ul li {
+          background-color: #fffefe;
+          margin-bottom: 1em;
+          border-radius: 20px;
+          position: relative;
+          margin-left: 0em;
+          padding-top: 1em;
+          padding-bottom: 1em;
+          padding-left: 1em;
+          padding-right: 1em; }
+          .menu ul li ul li h4 {
+            margin-top: 0.5em;
+            margin-bottom: 0.4em; }
+          .menu ul li ul li span {
+            font-size: 1rem; }
+            .menu ul li ul li span.price {
+              position: absolute;
+              right: 3em; }
 /*# sourceMappingURL=main.css.map */

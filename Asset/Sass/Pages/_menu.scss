@@ -1,6 +1,15 @@
+.menu-img {
+  position: relative;  
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: -3.5em;
+  z-index: -1;
+ }
+
 .menu {
   border-radius: 50px 50px 0px 0px;
   padding-top: 3em;
+  position: relative;
   h2 {
     font-size: map-get($font-size, bigTitle);
     font-family: map-get($font, title);
@@ -12,10 +21,38 @@
     right: -0.5em;
     margin-right: 2em;
   }
-}
 
-.menu-img {
-  position: relative;
-  margin-bottom: -3.5em;
-  z-index: -1;
+  ul {
+    display: flex;
+    flex-direction: column;
+    li {
+      margin-left: 0em;
+      h3 {
+      }
+      ul {
+        display: flex;
+        flex-direction: column;
+
+        li {
+          background-color: map-get($color, back1);
+          margin-bottom: 1em;
+          border-radius: 20px;
+          position: relative;
+          margin-left: 0em;
+          @include padding-top-bottom(1em);
+          @include padding-left-right(1em);
+          h4 {
+            @include margin-top-bottom(0.5em, -0.1em);
+          }
+          span {
+            font-size: map-get($font-size, text);
+            &.price {
+              position: absolute;
+              right: 3em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
