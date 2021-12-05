@@ -31,6 +31,13 @@ $spanMargin: 1.2em;
   span {
     @include margin-left-right($spanMargin);
     font-size: map-get($font-size, tallText);
+    margin: 0;
     margin-bottom: 1.5em;
+  }
+}
+
+.functioning{
+  ul li{    
+    @include box-shadow;
   }
 }

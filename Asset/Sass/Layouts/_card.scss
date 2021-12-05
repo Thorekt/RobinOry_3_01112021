@@ -2,7 +2,8 @@
   margin-top: 1em;
   display: flex;
   flex-direction: column;
-  .card {
+  .card {    
+    @include box-shadow;
     background-color: map-get($color, back1);
     margin-bottom: 1em;
     border-radius: 20px;

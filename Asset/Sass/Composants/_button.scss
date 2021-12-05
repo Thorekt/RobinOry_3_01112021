@@ -6,12 +6,13 @@
     map-get($color, secondary),
     map-get($color, primary)
   );
-  @include padding-top-bottom(1.4em);
+  @include padding-top-bottom(1.2em);
   @include margin-left-right(auto);
   border-radius: 50px;
 
   span{
-      
-
+    @include padding-left-right(1.7em);
+    font-size: map-get($font-size, tallText);
+    margin: 0;    
   }
 }

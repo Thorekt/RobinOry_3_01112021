@@ -1,11 +1,11 @@
 .menu-img {
   position: relative;
-  width: 100%; 
+  width: 100%;
   max-width: 600px;
   margin: auto;
   margin-bottom: -3.5em;
   z-index: -1;
- }
+}
 
 .menu {
   border-radius: 50px 50px 0px 0px;
@@ -27,21 +27,28 @@
     display: flex;
     flex-direction: column;
     li {
+      @include padding-top-bottom(0);
+     
       margin-left: 0em;
       h3 {
+        @include font-normal();
         margin: 0;
+        margin-bottom: 0.2em;
       }
-      hr{
+      hr {
         margin: 0;
+        border: none;
         border-top: 0.3em solid map-get($color, tertiary);
-        width: 2em;
-
+        color: map-get($color, tertiary);
+        width: 3em;
+        margin-bottom: 1em;
       }
       ul {
         display: flex;
         flex-direction: column;
 
         li {
+          @include box-shadow;
           background-color: map-get($color, back1);
           margin-bottom: 1em;
           border-radius: 20px;
@@ -50,13 +57,16 @@
           @include padding-top-bottom(1em);
           @include padding-left-right(1em);
           h4 {
-            @include margin-top-bottom(0.5em, -0.1em);
+            font-size: map-get($font-size, tallText);
+            margin: 0;
+            margin-bottom: 0.4em;
           }
           span {
+            @include font-normal();
             font-size: map-get($font-size, text);
             &.price {
               position: absolute;
-              right: 3em;
+              right: 1.5em;
             }
           }
         }
