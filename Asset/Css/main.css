@@ -39,6 +39,10 @@ header, footer, section {
   max-width: 600px;
   margin: auto; }
 
+a {
+  text-decoration: none;
+  color: inherit; }
+
 .btn {
   color: white;
   border: 0;
@@ -313,5 +317,6 @@ section {
             font-size: 1rem; }
             .menu ul li ul li span.price {
               position: absolute;
-              right: 1.5em; }
+              right: 1.5em;
+              bottom: 1em; }
 /*# sourceMappingURL=main.css.map */
