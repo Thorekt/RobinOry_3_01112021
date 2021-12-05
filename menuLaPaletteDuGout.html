@@ -13,81 +13,126 @@
     <title>ohmyfood - La pelette du go&ucirc;t</title>
   </head>
   <body>
-    <header>
-      <div>
-        <button></button>
-        <img src="./Asset/Images/Logo/ohmyfood.png" alt="Logo Ohmyfood" />
+    <div class="pg-header">
+      <div class="wrapper">
+        <header>
+          <button><i class="fas fa-arrow-left"></i></button>
+          <div class="logo">
+            <img src="./Asset/Images/Logo/ohmyfood.png" alt="Logo Ohmyfood" />
+          </div>
+        </header>
       </div>
-    </header>
-
-    <section>
-      <h2>La pelette du go&ucirc;t</h2>
-      <i></i>
-
-      <div>
-        <h3>Entr&eacute;es</h3>
-        <div>
-          <h4>Fricass&eacute;e d'escargot</h4>
-          <span>Au piment d'Espelette</span>
-          <span>25&euro;</span>
-        </div>
-        <div>
-          <h4>Foie gras de canard mi-cuit</h4>
-          <span>Et ses copeaux de truffe noire</span>
-          <span>35&euro;</span>
-        </div>
-        <div>
-          <h4>Oeuf au plat</h4>
-          <span>Assaisonn&eacute; &agrave; la truffe sur lit de caviar</span>
-          <span>20&euro;</span>
-        </div>
+    </div>
+    <div class="pg-main">
+      <div class="img-wrapper">
+        <img
+          class="menu-img"
+          src="./Asset/Images/Restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+          alt=""
+        />
       </div>
 
-      <div>
-        <h3>Plats</h3>
-        <div>
-          <h4>Filet de boeuf aux herbes</h4>
-          <span>Accompagn&eacute; de sa ribambelle de l&eacute;gumes</span>
-          <span>40&euro;</span>
-        </div>
-        <div>
-          <h4>Parmentier de queue de boeuf</h4>
-          <span>&Agrave; la truffe noire sur sa purée de panais</span>
-          <span>35&euro;</span>
-        </div>
-        <div>
-          <h4>Filet de turbot</h4>
-          <span>Aux agrumes</span>
-          <span>44&euro;</span>
-        </div>
-      </div>
+      <div class="wrapper">
+        <section class="menu grey">
+          <h2>La pelette du go&ucirc;t</h2>
+          <i class="far fa-heart"></i>
+          <ul>
+            <li>
+              <ul>
+                <h3>ENTR&Eacute;ES</h3>
+                <hr />
+                <li>
+                  <h4>Fricass&eacute;e d'escargot</h4>
+                  <span>Au piment d'Espelette </span>
+                  <span class="price">25&euro;</span>
+                </li>
+                <li>
+                  <h4>Foie gras de canard mi-cuit</h4>
+                  <span>Et ses copeaux de truffe noire</span>
+                  <span class="price">35&euro;</span>
+                </li>
+                <li>
+                  <h4>Oeuf au plat</h4>
+                  <span
+                    >Assaisonn&eacute; &agrave; la truffe sur lit de
+                    caviar</span
+                  >
+                  <span class="price">20&euro;</span>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <ul>
+                <h3>PLATS</h3>
+                <hr />
+                <li>
+                  <h4>Filet de boeuf aux herbes</h4>
+                  <span
+                    >Accompagn&eacute; de sa ribambelle de l&eacute;gumes</span
+                  >
+                  <span class="price">40&euro;</span>
+                </li>
+                <li>
+                  <h4>Parmentier de queue de boeuf</h4>
+                  <span
+                    >&Agrave; la truffe noire sur sa pur&eacute;e de
+                    panais</span
+                  >
+                  <span class="price">35&euro;</span>
+                </li>
+                <li>
+                  <h4>Filet de turbot</h4>
+                  <span>Aux agrumes</span>
+                  <span class="price">44&euro;</span>
+                </li>
+              </ul>
+            </li>
 
-      <div>
-        <h3>Desserts</h3>
-        <div>
-          <h4>Paris-Brest</h4>
-          <span>Revisit&eacute;</span>
-          <span>18&euro;</span>
-        </div>
-        <div>
-          <h4>Macaron au chocolat d'exception</h4>
-          <span>Et glace &agrave; la vanille de Madagascar</span>
-          <span>22&euro;</span>
-        </div>
-        <div>
-          <h4>Filet de turbot</h4>
-          <span>Aux agrumes</span>
-          <span>23&euro;</span>
-        </div>
+            <li>
+              <ul>
+                <h3>DESSERTS</h3>
+                <hr />
+                <li>
+                  <h4>Paris-Brest</h4>
+                  <span>Revisit&eacute;</span>
+                  <span class="price">18&euro;</span>
+                </li>
+                <li>
+                  <h4>Macaron au chocolat d'exception</h4>
+                  <span>Et glace &agrave; la vanille de Madagascar</span>
+                  <span class="price">22&euro;</span>
+                </li>
+                <li>
+                  <h4>Mousse au chocolat</h4>
+                  <span>Au piment d'Espelette et &agrave; la truffe noire</span>
+                  <span class="price">23&euro;</span>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <button class="btn">
+            <span>Commander</span>
+          </button>
+        </section>
       </div>
-    </section>
+    </div>
 
-    <footer>
-      <a><h4>ohmyfood</h4></a>
-      <a><i class="fas fa-utensils"></i><span class="has-icon">Proposer un restaurant</span></a>
-      <a><i class="fas fa-hands-helping"></i><span class="has-icon">Devenir partenaire</span></a>
-      <a><span>Mentions légales</span></a>
-      <a><span>Contact</span></a>
-    </footer>
+    <div class="pg-footer">
+      <div class="wrapper">
+        <footer>
+          <a><h4>ohmyfood</h4></a>
+          <a
+            ><i class="fas fa-utensils"></i
+            ><span class="has-icon">Proposer un restaurant</span></a
+          >
+          <a
+            ><i class="fas fa-hands-helping"></i
+            ><span class="has-icon">Devenir partenaire</span></a
+          >
+          <a><span>Mentions l&eacute;gales</span></a>
+          <a><span>Contact</span></a>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
