@@ -33,6 +33,10 @@ img {
 .wrapper{  
   width: 100%;
 }
+.img-wrapper{
+  width: 100%;
+  display: flex;
+}
 
 header, footer, section {
   max-width: 600px;

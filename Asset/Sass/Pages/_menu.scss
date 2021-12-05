@@ -1,5 +1,6 @@
 .menu-img {
-  position: relative;  
+  position: relative;
+  width: 100%; 
   max-width: 600px;
   margin: auto;
   margin-bottom: -3.5em;
@@ -28,6 +29,13 @@
     li {
       margin-left: 0em;
       h3 {
+        margin: 0;
+      }
+      hr{
+        margin: 0;
+        border-top: 0.3em solid map-get($color, tertiary);
+        width: 2em;
+
       }
       ul {
         display: flex;
