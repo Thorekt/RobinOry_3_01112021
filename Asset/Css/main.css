@@ -369,6 +369,10 @@ section {
     -webkit-transform: translateX(4em);
             transform: translateX(4em); }
     .dish__validate i {
+      -webkit-transition: all 700ms;
+      transition: all 700ms;
+      -webkit-transform: rotateZ(0deg);
+              transform: rotateZ(0deg);
       color: white;
       margin: 0;
       position: static; }
@@ -378,4 +382,7 @@ section {
   .dish:hover .dish__validate {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
+    .dish:hover .dish__validate i {
+      -webkit-transform: rotateZ(360deg);
+              transform: rotateZ(360deg); }
 /*# sourceMappingURL=main.css.map */

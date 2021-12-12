@@ -100,7 +100,10 @@
     @include padding-left-right(1em);
     transition: all 700ms;
     transform: translateX(4em);
+
     i {
+      transition: all 700ms;
+      transform: rotateZ(0deg);
       color: white;
       margin: 0;
       position: static;
@@ -113,6 +116,9 @@
     }
     .dish__validate {
       transform: translateX(0);
+      i {
+        transform: rotateZ(360deg);
+      }
     }
   }
 }
