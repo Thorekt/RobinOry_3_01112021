@@ -1,0 +1,26 @@
+.fa-heart {
+  transition: all 400ms;
+
+  &.far {
+    opacity: 1;
+    z-index: 1;
+    &:hover {
+      opacity: 0;
+    }
+    &:hover + .fas {
+      opacity: 1;
+    }
+  }
+
+  &.fas {
+    opacity: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(
+      170deg,
+      map-get($color, secondary),
+      map-get($color, primary)
+    );
+    color: transparent;
+  }
+}
