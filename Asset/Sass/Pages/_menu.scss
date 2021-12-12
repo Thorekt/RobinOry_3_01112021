@@ -29,7 +29,7 @@
     flex-direction: column;
     li {
       @include padding-top-bottom(0);
-     
+
       margin-left: 0em;
       h3 {
         @include font-normal();
@@ -49,30 +49,70 @@
         flex-direction: column;
 
         li {
-          @include box-shadow;
-          background-color: map-get($color, back1);
           margin-bottom: 1em;
           border-radius: 20px;
           position: relative;
           margin-left: 0em;
-          @include padding-top-bottom(1em);
-          @include padding-left-right(1em);
-          h4 {
-            font-size: map-get($font-size, tallText);
-            margin: 0;
-            margin-bottom: 0.4em;
-          }
-          span {
-            @include font-normal();
-            font-size: map-get($font-size, text);
-            &.price {
-              position: absolute;
-              right: 1.5em;
-              bottom: 1em;
-            }
-          }
         }
       }
+    }
+  }
+}
+
+.dish {
+  @include box-shadow;
+  background-color: map-get($color, back1);
+  display: flex;
+  justify-content: stretch;
+  align-content: stretch;
+  gap: 0;
+  h4 {
+    font-size: map-get($font-size, tallText);
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+  span {
+    @include font-normal();
+    font-size: map-get($font-size, text);
+  }
+
+  overflow: hidden;
+
+  transition: all 1000ms;
+
+  &__description {
+    @include padding-top-bottom(1em);
+    @include padding-left-right(1em);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  &__price {
+    padding-top: 3em;
+    @include padding-left-right(0.5em);
+    margin-left: auto;
+    transition: all 700ms;
+    transform: translateX(2em);
+  }
+  &__validate {
+    background-color: map-get($color, tertiary);
+    padding-top: 1.7em;
+    @include padding-left-right(1em);
+    transition: all 700ms;
+    transform: translateX(4em);
+    i {
+      color: white;
+      margin: 0;
+      position: static;
+    }
+  }
+
+  &:hover {
+    .dish__price {
+      transform: translateX(0);
+    }
+    .dish__validate {
+      transform: translateX(0);
     }
   }
 }

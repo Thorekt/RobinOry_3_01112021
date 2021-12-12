@@ -313,27 +313,69 @@ section {
             -ms-flex-direction: column;
                 flex-direction: column; }
         .menu ul li ul li {
-          -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
-          background-color: #fffefe;
           margin-bottom: 1em;
           border-radius: 20px;
           position: relative;
-          margin-left: 0em;
-          padding-top: 1em;
-          padding-bottom: 1em;
-          padding-left: 1em;
-          padding-right: 1em; }
-          .menu ul li ul li h4 {
-            font-size: 1.2rem;
-            margin: 0;
-            margin-bottom: 0.4em; }
-          .menu ul li ul li span {
-            font-style: normal;
-            font-weight: normal;
-            font-size: 1rem; }
-            .menu ul li ul li span.price {
-              position: absolute;
-              right: 1.5em;
-              bottom: 1em; }
+          margin-left: 0em; }
+
+.dish {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fffefe;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  -ms-flex-line-pack: stretch;
+      align-content: stretch;
+  gap: 0;
+  overflow: hidden;
+  -webkit-transition: all 1000ms;
+  transition: all 1000ms; }
+  .dish h4 {
+    font-size: 1.2rem;
+    margin: 0;
+    margin-bottom: 0.4em; }
+  .dish span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1rem; }
+  .dish__description {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+  .dish__price {
+    padding-top: 3em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+    -webkit-transform: translateX(2em);
+            transform: translateX(2em); }
+  .dish__validate {
+    background-color: #99e2d0;
+    padding-top: 1.7em;
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-transition: all 700ms;
+    transition: all 700ms;
+    -webkit-transform: translateX(4em);
+            transform: translateX(4em); }
+    .dish__validate i {
+      color: white;
+      margin: 0;
+      position: static; }
+  .dish:hover .dish__price {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
+  .dish:hover .dish__validate {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); }
 /*# sourceMappingURL=main.css.map */
