@@ -318,7 +318,31 @@ section {
           position: relative;
           margin-left: 0em; }
 
+@-webkit-keyframes SlideIn {
+  from {
+    -webkit-transform: translateY(1.5em);
+            transform: translateY(1.5em);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+    opacity: 1; } }
+
+@keyframes SlideIn {
+  from {
+    -webkit-transform: translateY(1.5em);
+            transform: translateY(1.5em);
+    opacity: 0; }
+  to {
+    -webkit-transform: translateY(0em);
+            transform: translateY(0em);
+    opacity: 1; } }
+
 .dish {
+  -webkit-animation-name: SlideIn;
+          animation-name: SlideIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #fffefe;

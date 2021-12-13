@@ -7,7 +7,7 @@
   margin-bottom: -3.5em;
   z-index: -1;
 }
-
+// mensuration des des element du menu
 .menu {
   border-radius: 50px 50px 0px 0px;
   padding-top: 3em;
@@ -48,6 +48,7 @@
         display: flex;
         flex-direction: column;
 
+
         li {
           margin-bottom: 1em;
           border-radius: 20px;
@@ -59,7 +60,24 @@
   }
 }
 
+@keyframes SlideIn {
+  from{
+    transform: translateY(1.5em);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0em);
+    opacity: 1;
+  }
+    
+}
+
+// gestion du contenu des plats
 .dish {
+  animation-name: SlideIn;
+  animation-duration: 1s;
+ 
+
   @include box-shadow;
   background-color: map-get($color, back1);
   position: relative;
