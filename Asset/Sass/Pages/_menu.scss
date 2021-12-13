@@ -62,10 +62,8 @@
 .dish {
   @include box-shadow;
   background-color: map-get($color, back1);
-  display: flex;
-  justify-content: stretch;
-  align-content: stretch;
-  gap: 0;
+  position: relative;
+  overflow: hidden;
   h4 {
     font-size: map-get($font-size, tallText);
     margin: 0;
@@ -76,7 +74,6 @@
     font-size: map-get($font-size, text);
   }
 
-  overflow: hidden;
 
   transition: all 1000ms;
 
@@ -86,20 +83,28 @@
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
+    padding-right: 5em;
+    transition: all 1000ms;
   }
   &__price {
-    padding-top: 3em;
-    @include padding-left-right(0.5em);
     margin-left: auto;
+    position: absolute;
+    background-color: white;
+    bottom: 1em;
+    right: 5.5em;
     transition: all 700ms;
-    transform: translateX(2em);
+    transform: translateX(3em);
   }
   &__validate {
     background-color: map-get($color, tertiary);
-    padding-top: 1.7em;
-    @include padding-left-right(1em);
+    @include padding-top-bottom(1.75em);
+    @include padding-left-right(1.5em);
     transition: all 700ms;
-    transform: translateX(4em);
+    transform: translateX(5em);
+    position: absolute;
+    top: 0;
+    right: 0;
+    
 
     i {
       transition: all 700ms;
@@ -111,6 +116,9 @@
   }
 
   &:hover {
+    .dish__description{
+      padding-right: 8em;
+    }
     .dish__price {
       transform: translateX(0);
     }

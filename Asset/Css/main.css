@@ -322,15 +322,7 @@ section {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #fffefe;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: stretch;
-      -ms-flex-pack: stretch;
-          justify-content: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
-  gap: 0;
+  position: relative;
   overflow: hidden;
   -webkit-transition: all 1000ms;
   transition: all 1000ms; }
@@ -349,25 +341,33 @@ section {
     padding-right: 1em;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap; }
+    white-space: nowrap;
+    padding-right: 5em;
+    -webkit-transition: all 1000ms;
+    transition: all 1000ms; }
   .dish__price {
-    padding-top: 3em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
     margin-left: auto;
+    position: absolute;
+    background-color: white;
+    bottom: 1em;
+    right: 5.5em;
     -webkit-transition: all 700ms;
     transition: all 700ms;
-    -webkit-transform: translateX(2em);
-            transform: translateX(2em); }
+    -webkit-transform: translateX(3em);
+            transform: translateX(3em); }
   .dish__validate {
     background-color: #99e2d0;
-    padding-top: 1.7em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 1.75em;
+    padding-bottom: 1.75em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     -webkit-transition: all 700ms;
     transition: all 700ms;
-    -webkit-transform: translateX(4em);
-            transform: translateX(4em); }
+    -webkit-transform: translateX(5em);
+            transform: translateX(5em);
+    position: absolute;
+    top: 0;
+    right: 0; }
     .dish__validate i {
       -webkit-transition: all 700ms;
       transition: all 700ms;
@@ -376,6 +376,8 @@ section {
       color: white;
       margin: 0;
       position: static; }
+  .dish:hover .dish__description {
+    padding-right: 8em; }
   .dish:hover .dish__price {
     -webkit-transform: translateX(0);
             transform: translateX(0); }
