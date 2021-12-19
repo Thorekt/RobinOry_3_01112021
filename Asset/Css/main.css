@@ -136,7 +136,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  header button {
+  header a {
     position: absolute;
     border: 0;
     font-size: 1.3em;
@@ -338,22 +338,41 @@ section {
             transform: translateY(0em);
     opacity: 1; } }
 
+.second {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms; }
+
+.third {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms; }
+
+.fourth {
+  -webkit-animation-delay: 450ms;
+          animation-delay: 450ms; }
+
 .dish {
+  opacity: 0;
   -webkit-animation-name: SlideIn;
           animation-name: SlideIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
   background-color: #fffefe;
   position: relative;
   overflow: hidden;
-  -webkit-transition: all 1000ms;
-  transition: all 1000ms; }
+  -webkit-transition: all 700ms;
+  transition: all 700ms; }
   .dish h4 {
     font-size: 1.2rem;
     margin: 0;
-    margin-bottom: 0.4em; }
+    margin-bottom: 0.4em;
+    overflow: hidden;
+    text-overflow: ellipsis; }
   .dish span {
     font-style: normal;
     font-weight: normal;
@@ -367,16 +386,16 @@ section {
     overflow: hidden;
     white-space: nowrap;
     padding-right: 5em;
-    -webkit-transition: all 1000ms;
-    transition: all 1000ms; }
+    -webkit-transition: inherit;
+    transition: inherit; }
   .dish__price {
     margin-left: auto;
     position: absolute;
     background-color: white;
     bottom: 1em;
     right: 5.5em;
-    -webkit-transition: all 700ms;
-    transition: all 700ms;
+    -webkit-transition: inherit;
+    transition: inherit;
     -webkit-transform: translateX(3em);
             transform: translateX(3em); }
   .dish__validate {
@@ -385,16 +404,16 @@ section {
     padding-bottom: 1.75em;
     padding-left: 1.5em;
     padding-right: 1.5em;
-    -webkit-transition: all 700ms;
-    transition: all 700ms;
+    -webkit-transition: inherit;
+    transition: inherit;
     -webkit-transform: translateX(5em);
             transform: translateX(5em);
     position: absolute;
     top: 0;
     right: 0; }
     .dish__validate i {
-      -webkit-transition: all 700ms;
-      transition: all 700ms;
+      -webkit-transition: inherit;
+      transition: inherit;
       -webkit-transform: rotateZ(0deg);
               transform: rotateZ(0deg);
       color: white;

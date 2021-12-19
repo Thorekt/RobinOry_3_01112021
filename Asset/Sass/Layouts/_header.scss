@@ -2,7 +2,7 @@ header {
   @include margin-top-bottom(1em,-0.5em);
   display: flex;
 
-  button{
+  a{
     position: absolute;
     border: 0;
     font-size: 1.3em;

@@ -72,11 +72,25 @@
     
 }
 
+$delay: 150ms;
+
+.second{
+  animation-delay:$delay;
+}
+.third{
+  animation-delay: $delay*2;
+}
+.fourth{
+  animation-delay: $delay*3;
+}
+
 // gestion du contenu des plats
 .dish {
+  opacity: 0;
   animation-name: SlideIn;
   animation-duration: 1s;
- 
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
 
   @include box-shadow;
   background-color: map-get($color, back1);
@@ -86,6 +100,8 @@
     font-size: map-get($font-size, tallText);
     margin: 0;
     margin-bottom: 0.4em;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   span {
     @include font-normal();
@@ -93,7 +109,7 @@
   }
 
 
-  transition: all 1000ms;
+  transition: all 700ms;
 
   &__description {
     @include padding-top-bottom(1em);
@@ -102,7 +118,7 @@
     overflow: hidden;
     white-space: nowrap;
     padding-right: 5em;
-    transition: all 1000ms;
+    transition: inherit;
   }
   &__price {
     margin-left: auto;
@@ -110,22 +126,21 @@
     background-color: white;
     bottom: 1em;
     right: 5.5em;
-    transition: all 700ms;
+    transition: inherit;
     transform: translateX(3em);
   }
   &__validate {
     background-color: map-get($color, tertiary);
     @include padding-top-bottom(1.75em);
     @include padding-left-right(1.5em);
-    transition: all 700ms;
+    transition: inherit;
     transform: translateX(5em);
     position: absolute;
     top: 0;
-    right: 0;
-    
+    right: 0;  
 
     i {
-      transition: all 700ms;
+      transition: inherit;
       transform: rotateZ(0deg);
       color: white;
       margin: 0;
