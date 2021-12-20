@@ -7,10 +7,10 @@
 
 //Composants
 @import "./Composants/button";
-@import "./Composants/list";
 @import "./Composants/heart";
 
 //Layout
+@import "./Layouts/list";
 @import "./Layouts/footer";
 @import "./Layouts/header";
 @import "./Layouts/section";
@@ -20,6 +20,4 @@
 //Pages
 @import "./Pages/home";
 @import "./Pages/menu";
-
-//Themes
 
