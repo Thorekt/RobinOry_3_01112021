@@ -1,0 +1,92 @@
+@keyframes firstIcon {
+    0% {
+        transform: translateX(-1em);
+    }
+    50% {
+        transform: translateX(1em);
+    }
+    100% {
+        transform: translateX(-1em);
+    }
+}
+@keyframes secondIcon {
+    0% {
+        transform: translateX(1em);
+    }
+    50% {
+        transform: translateX(-1em);
+    }
+    100% {
+        transform: translateX(1em);
+    }
+}
+@keyframes hideLoaderAfterTime {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    66% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+@keyframes displayAfterTime {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    66% {
+        opacity: 0;
+        visibility: visible;
+    }
+    100% {
+        opacity: 01;
+        visibility: visible;
+    }
+}
+
+.loader {
+    position: absolute;
+    z-index: 10;
+    animation-name: hideLoaderAfterTime;
+    animation-duration: 3s;
+    visibility: hidden;
+    text-align: center;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 100%;
+    i {
+        position: absolute;
+        font-size: 2em;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(
+          170deg,
+          map-get($color, secondary),
+          map-get($color, primary)
+        );
+        color: transparent;
+    }
+
+    .first {
+        animation-name: firstIcon;
+        animation-duration: 1s;
+        animation-iteration-count: 3;
+    }
+
+    .second {
+        animation-name: secondIcon;
+        animation-duration: 1s;
+        animation-iteration-count: 3;
+    }
+}
+
+.pg-header, .pg-main, .pg-footer{
+    animation-name: displayAfterTime;
+    animation-duration: 3s;
+}
