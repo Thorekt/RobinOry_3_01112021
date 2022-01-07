@@ -239,14 +239,14 @@ a {
 
 .loader i {
   position: absolute;
-  font-size: 2em;
+  font-size: 1em;
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(170deg, #ff79da, #9356dc);
   color: transparent;
 }
 
-.loader .first {
+.loader .first-icon {
   -webkit-animation-name: firstIcon;
           animation-name: firstIcon;
   -webkit-animation-duration: 1s;
@@ -255,7 +255,7 @@ a {
           animation-iteration-count: 3;
 }
 
-.loader .second {
+.loader .second-icon {
   -webkit-animation-name: secondIcon;
           animation-name: secondIcon;
   -webkit-animation-duration: 1s;
