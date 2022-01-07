@@ -51,6 +51,7 @@
 
 .loader {
     position: absolute;
+    top: 10em;
     z-index: 10;
     animation-name: hideLoaderAfterTime;
     animation-duration: 3s;
