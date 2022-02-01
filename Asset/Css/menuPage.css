@@ -77,36 +77,6 @@ a {
     background-image: linear-gradient(170deg, #ff79da, #9356dc);
     color: transparent; }
 
-ul {
-  list-style-type: none;
-  padding: 0; }
-  ul li {
-    padding-top: 2em;
-    padding-bottom: 2em;
-    margin-left: 0.8em;
-    margin-bottom: 1.5em;
-    border-radius: 25px; }
-    ul li .number {
-      margin-left: -0.9em;
-      background-color: #9356dc;
-      color: white;
-      border-radius: 100px;
-      padding-top: 0.3em;
-      padding-bottom: 0.1em;
-      padding-left: 0.5em;
-      padding-right: 0.5em; }
-    ul li i {
-      margin-left: 1.2em;
-      margin-right: 1.2em;
-      color: gray;
-      font-size: 1.4rem; }
-    ul li:hover {
-      background-color: rgba(147, 86, 220, 0.1); }
-      ul li:hover i {
-        color: #9356dc; }
-    ul li .text {
-      font-size: 1rem; }
-
 .pg-footer {
   background-color: #353535; }
 
@@ -341,4 +311,8 @@ section {
     .dish:hover .dish__validate i {
       -webkit-transform: rotateZ(360deg);
               transform: rotateZ(360deg); }
+
+ul {
+  list-style-type: none;
+  padding: 0; }
 /*# sourceMappingURL=menuPage.css.map */
